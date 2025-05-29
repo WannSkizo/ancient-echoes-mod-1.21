@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "ancientechoesmod:netherite_stick"
+    },
+    "X": {
+      "item": "ancientechoesmod:adamantium_ingot"
+    }
+  },
+  "pattern": [
+    "X",
+    "X",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ancientechoesmod:adamantium_sword"
+  }
+}

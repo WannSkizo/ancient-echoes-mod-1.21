@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.3,
+  "group": "adamantium_shard",
+  "ingredient": {
+    "item": "ancientechoesmod:raw_adamantium_ore"
+  },
+  "result": {
+    "id": "ancientechoesmod:adamantium_shard"
+  }
+}

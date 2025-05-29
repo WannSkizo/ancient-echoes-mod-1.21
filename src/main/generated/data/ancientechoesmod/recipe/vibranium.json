@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "ancientechoesmod:vibranium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "ancientechoesmod:vibranium"
+  }
+}

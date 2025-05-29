@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "ancientechoesmod:adamantium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "ancientechoesmod:adamantium_ingot"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "item.ancientechoesmod.raw_adamantium_ore": "Raw Adamantium Ore",
+  "item.ancientechoesmod.adamantium_ingot": "Adamantium Ingot",
+  "item.ancientechoesmod.adamantium_scrap": "Adamantium Scrap",
+  "item.ancientechoesmod.adamantium_shard": "Adamantium Shard",
+  "item.ancientechoesmod.raw_vibranium_ore": "Raw Vibranium Ore",
+  "item.ancientechoesmod.vibranium": "Vibranium",
+
+  "item.ancientechoesmod.netherite_stick": "Netherite Stick",
+  "item.ancientechoesmod.adamantium_sword": "Adamantium Sword",
+  "item.ancientechoesmod.adamantium_pickaxe": "Adamantium Pickaxe",
+  "item.ancientechoesmod.adamantium_axe": "Adamantium Axe",
+
+  "block.ancientechoesmod.deepslate_adamantium_ore": "Deepslate Adamantium Ore",
+  "block.ancientechoesmod.adamantium_block": "Block Of Adamantium",
+  "block.ancientechoesmod.vibranium_ore": "Vibranium Ore",
+  "block.ancientechoesmod.vibranium_block": "Block Of Vibranium",
+  "block.ancientechoesmod.primordial_steel": "Primordial Steel",
+
+  "block.ancientechoesmod.quantum_forge": "Quantum Forge",
+
+  "block.ancientechoesmod.faevil_log": "Faevil Log",
+  "block.ancientechoesmod.faevil_wood": "Faevil Wood",
+  "block.ancientechoesmod.stripped_faevil_log": "Stripped Faevil Log",
+  "block.ancientechoesmod.stripped_faevil_wood": "Stripped Faevil Wood",
+  "block.ancientechoesmod.faevil_planks": "Faevil Planks",
+  "block.ancientechoesmod.faevil_leaves": "Faevil Leaves",
+  "block.ancientechoesmod.faevil_sapling": "Faevil Sapling"
+}

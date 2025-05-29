@@ -1,0 +1,10 @@
+{
+  "type": "ancientechoesmod:quantum_forge",
+  "ingredient": {
+    "item": "ancientechoesmod:raw_vibranium_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "ancientechoesmod:vibranium"
+  }
+}
