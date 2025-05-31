@@ -39,8 +39,8 @@ public class ModItems {
             entries.add(ADAMANTIUM_INGOT);
             entries.add(ADAMANTIUM_SCRAP);
             entries.add(ADAMANTIUM_SHARD);
-            entries.add(VIBRANIUM);
             entries.add(RAW_VIBRANIUM_ORE);
+            entries.add(VIBRANIUM);
             entries.add(NETHERITE_STICK);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries ->{

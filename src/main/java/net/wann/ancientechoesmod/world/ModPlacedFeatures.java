@@ -24,6 +24,7 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> ORE_VIBRANIUM_SMALL_PLACED = registerKey("ore_vibranium_small_placed");
     public static final RegistryKey<PlacedFeature> ORE_VIBRANIUM_MEDIUM_PLACED = registerKey("ore_vibranium_medium_placed");
     public static final RegistryKey<PlacedFeature> ORE_VIBRANIUM_LARGE_PLACED = registerKey("ore_vibranium_large_placed");
+    public static final RegistryKey<PlacedFeature> ORE_VIBRANIUM_EXTRA_LARGE_BURIED_PLACED = registerKey("ore_vibranium_extra_large_buried_placed");
 
     public static final RegistryKey<PlacedFeature> PRIMORDIAL_STEEL_SMALL_PLACED = registerKey("primordial_steel_small_placed");
     public static final RegistryKey<PlacedFeature> PRIMORDIAL_STEEL_LARGE_PLACED = registerKey("primordial_steel_large_placed");
@@ -48,13 +49,16 @@ public class ModPlacedFeatures {
 
         register(context, ORE_VIBRANIUM_SMALL_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.ORE_VIBRANIUM_SMALL),
                 ModOrePlacement.modifiersWithCount(70,
-                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(10), YOffset.getTop())));
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(10), YOffset.getTop())));
         register(context, ORE_VIBRANIUM_MEDIUM_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.ORE_VIBRANIUM_MEDIUM),
                 ModOrePlacement.modifiersWithCount(50,
                         HeightRangePlacementModifier.trapezoid(YOffset.fixed(10), YOffset.getTop())));
         register(context, ORE_VIBRANIUM_LARGE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.ORE_VIBRANIUM_LARGE),
                 ModOrePlacement.modifiersWithCount(25,
                         HeightRangePlacementModifier.trapezoid(YOffset.fixed(10), YOffset.getTop())));
+        register(context, ORE_VIBRANIUM_EXTRA_LARGE_BURIED_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.ORE_VIBRANIUM_EXTRA_LARGE_BURIED),
+                ModOrePlacement.modifiersWithCount(10,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(12), YOffset.fixed(55))));
 
         register(context, PRIMORDIAL_STEEL_SMALL_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PRIMORDIAL_STEEL_SMALL),
                 ModSquarePlacement.of(),

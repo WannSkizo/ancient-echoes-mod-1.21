@@ -81,7 +81,7 @@ public class QuantumForgeBlockEntity extends BlockEntity implements ExtendedScre
 
     @Override
     public Text getDisplayName() {
-        return Text.translatable("block.oresmod.quantum_forge");
+        return Text.translatable("block.ancientechoesmod.quantum_forge");
     }
 
     @Nullable

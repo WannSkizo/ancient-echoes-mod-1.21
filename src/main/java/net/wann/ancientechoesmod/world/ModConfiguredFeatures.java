@@ -31,6 +31,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> ORE_VIBRANIUM_SMALL = registerKey("ore_vibranium_small");
     public static final RegistryKey<ConfiguredFeature<?, ?>> ORE_VIBRANIUM_MEDIUM = registerKey("ore_vibranium_medium");
     public static final RegistryKey<ConfiguredFeature<?, ?>> ORE_VIBRANIUM_LARGE = registerKey("ore_vibranium_large");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> ORE_VIBRANIUM_EXTRA_LARGE_BURIED = registerKey("ore_vibranium_extra_large_buried");
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> PRIMORDIAL_STEEL_SMALL = registerKey("primordial_steel_small");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PRIMORDIAL_STEEL_LARGE = registerKey("primordial_steel_large");
@@ -77,9 +78,10 @@ public class ModConfiguredFeatures {
         register(context, ORE_ADAMANTIUM_LARGE, Feature.ORE, new OreFeatureConfig(list1, 10, 0.7F));
         register(context, ORE_ADAMANTIUM_BURIED, Feature.ORE, new OreFeatureConfig(list1, 6, 1.0F));
 
-        register(context, ORE_VIBRANIUM_SMALL, Feature.ORE, new OreFeatureConfig(list2, 6, 0.8F));
-        register(context, ORE_VIBRANIUM_MEDIUM, Feature.ORE, new OreFeatureConfig(list2, 9, 0.9F));
-        register(context, ORE_VIBRANIUM_LARGE, Feature.ORE, new OreFeatureConfig(list2, 12, 1.0F));
+        register(context, ORE_VIBRANIUM_SMALL, Feature.ORE, new OreFeatureConfig(list2, 6, 0.1F));
+        register(context, ORE_VIBRANIUM_MEDIUM, Feature.ORE, new OreFeatureConfig(list2, 9, 0.2F));
+        register(context, ORE_VIBRANIUM_LARGE, Feature.ORE, new OreFeatureConfig(list2, 12, 0.5F));
+        register(context, ORE_VIBRANIUM_EXTRA_LARGE_BURIED, Feature.ORE, new OreFeatureConfig(list2, 24, 0.97F));
 
         register(context, PRIMORDIAL_STEEL_SMALL, Feature.SCATTERED_ORE, new OreFeatureConfig(list3, 2, 1.0F));
         register(context, PRIMORDIAL_STEEL_LARGE, Feature.SCATTERED_ORE, new OreFeatureConfig(list3, 3, 1.0F));

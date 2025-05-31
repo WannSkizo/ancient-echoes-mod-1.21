@@ -2,7 +2,7 @@
   "type": "ancientechoesmod:vibralune_type",
   "generator": {
     "type": "minecraft:noise",
-    "settings": "minecraft:overworld",
+    "settings": "ancientechoesmod:vibralune_settings",
     "biome_source": {
       "type": "minecraft:multi_noise",
       "biomes": [
@@ -10,8 +10,8 @@
           "biome": "minecraft:ocean",
           "parameters": {
             "temperature": -0.1,
-            "humidity": -0.12,
-            "continentalness": -0.03,
+            "humidity": -0.1,
+            "continentalness": 0.16,
             "erosion": 0,
             "weirdness": 0,
             "depth": 0,
@@ -21,9 +21,9 @@
         {
           "biome": "ancientechoesmod:vibra_biome",
           "parameters": {
-            "temperature": 0,
+            "temperature": 0.1,
             "humidity": 0,
-            "continentalness": 0.1,
+            "continentalness": 0,
             "erosion": 0,
             "weirdness": 0,
             "depth": 0,
@@ -35,7 +35,7 @@
           "parameters": {
             "temperature": 0,
             "humidity": 0,
-            "continentalness": 0,
+            "continentalness": 0.1,
             "erosion": 0,
             "weirdness": 0,
             "depth": 0,

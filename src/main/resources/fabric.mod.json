@@ -23,6 +23,9 @@
 		],
 		"client": [
 			"net.wann.ancientechoesmod.AncientEchoesModClient"
+		],
+		"terrablender": [
+			"net.wann.ancientechoesmod.world.biome.ModTerrablenderAPI"
 		]
 	},
 	"mixins": [

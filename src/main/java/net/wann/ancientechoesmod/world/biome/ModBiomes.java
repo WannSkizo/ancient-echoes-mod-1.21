@@ -12,9 +12,7 @@ import net.minecraft.world.biome.BiomeEffects;
 import net.minecraft.world.biome.GenerationSettings;
 import net.minecraft.world.biome.SpawnSettings;
 import net.minecraft.world.gen.GenerationStep;
-import net.minecraft.world.gen.carver.ConfiguredCarvers;
-import net.minecraft.world.gen.feature.DefaultBiomeFeatures; 
-import net.minecraft.world.gen.feature.MiscPlacedFeatures;
+import net.minecraft.world.gen.feature.DefaultBiomeFeatures;
 import net.wann.ancientechoesmod.AncientEchoesMod;
 
 import static net.minecraft.world.biome.OverworldBiomeCreator.getSkyColor;
@@ -28,10 +26,7 @@ public class ModBiomes {
     }
 
     public static void globalOverworldGeneration(GenerationSettings.LookupBackedBuilder builder) {
-        builder.carver(GenerationStep.Carver.AIR, ConfiguredCarvers.CAVE);
-        builder.carver(GenerationStep.Carver.AIR, ConfiguredCarvers.CANYON);
-        builder.feature(GenerationStep.Feature.LAKES, MiscPlacedFeatures.LAKE_LAVA_UNDERGROUND);
-        builder.feature(GenerationStep.Feature.LAKES, MiscPlacedFeatures.LAKE_LAVA_SURFACE);
+        DefaultBiomeFeatures.addLandCarvers(builder);
         DefaultBiomeFeatures.addMineables(builder);
         DefaultBiomeFeatures.addSprings(builder);
         DefaultBiomeFeatures.addFrozenTopLayer(builder);
@@ -56,7 +51,7 @@ public class ModBiomes {
 
         return new Biome.Builder()
                 .precipitation(true)
-                .downfall(0.9F)
+                .downfall(0.0F)
                 .temperature(1.0F)
                 .generationSettings(biomeBuilder.build())
                 .spawnSettings(spawnBuilder.build())
@@ -64,7 +59,7 @@ public class ModBiomes {
                         .waterColor(0x6b30a3)
                         .waterFogColor(0x5c2e8a)
                         .skyColor(getSkyColor(2.0F))
-                        .grassColor(0xed5a4c)
+                        .grassColor(0x671b9d)
                         .foliageColor(0x602b8d)
                         .fogColor(0x653193)
                         .moodSound(BiomeMoodSound.CAVE).build())
