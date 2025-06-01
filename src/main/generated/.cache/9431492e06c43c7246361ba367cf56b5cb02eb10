@@ -1,5 +1,6 @@
-// 1.21	2025-05-31T17:20:47.5112793	Ancient Echoes Mod/Model Definitions
+// 1.21	2025-06-01T23:06:11.203586	Ancient Echoes Mod/Model Definitions
 b623dbd6eac41881bebc38aa4eac2e80248bae0c assets\ancientechoesmod\models\item\vibranium.json
+b1a95c43d50e4c8141507d21193b696107eb97f8 assets\ancientechoesmod\models\item\vibra_portal.json
 7663201453daa5377a0d3a6c7c4e30f280042b9c assets\ancientechoesmod\models\item\faevil_leaves.json
 5f274448fbd8c09a971c71086ca00d64d3ae03c6 assets\ancientechoesmod\blockstates\faevil_leaves.json
 de94fcf321c59cf82152ae6f823b35ec0b448053 assets\ancientechoesmod\models\item\faevil_planks.json
@@ -10,6 +11,7 @@ e2e0f88c3a858c53283e80de57854202f9280a1c assets\ancientechoesmod\blockstates\qua
 29515a7e26bd52290b6f5bd21f8f3ecde8088664 assets\ancientechoesmod\models\item\raw_vibranium_ore.json
 92291fc8507d7e2e12c7cceb871bbded10d51d29 assets\ancientechoesmod\blockstates\stripped_faevil_wood.json
 5aec39f7a21bc07a3028d2292327c3e9eba7eb6e assets\ancientechoesmod\blockstates\stripped_faevil_log.json
+642bdb9ec31c95134cb3be6a0ed6f311836564db assets\ancientechoesmod\blockstates\vibra_portal.json
 f4dd3f2fa236df111558c8f3268c4cc69d494eec assets\ancientechoesmod\models\item\stripped_faevil_wood.json
 1cf2cb9bdf3ff6382a010782246beeee7a9ab2f2 assets\ancientechoesmod\models\block\adamantium_block.json
 a1e405c21036a50c77bdb9a4edaa3cb0f432ad01 assets\ancientechoesmod\models\block\quantum_forge.json
@@ -19,6 +21,7 @@ d662db44bdeb8ca65bd4a2e98adb1bb26359c628 assets\ancientechoesmod\models\item\ada
 72ab1e8d63cce3c92cf0b28657886140dd1f1770 assets\ancientechoesmod\blockstates\vibranium_block.json
 b1a01c16069083c39baba4313bf5f73bc9f73728 assets\ancientechoesmod\models\block\stripped_faevil_log_horizontal.json
 e595e209e9ce4e725f31757d4ef0f49851e7e7dc assets\ancientechoesmod\models\item\faevil_log.json
+2d6d021f590fbe65623aae28c433380fa544c5b1 assets\ancientechoesmod\models\block\vibra_portal.json
 27bb232b65c886365eb5b57aa14ed46b90672a68 assets\ancientechoesmod\models\block\faevil_log.json
 6f1b49d146caa966e08d73ba5e3cb5a02c2a0d0d assets\ancientechoesmod\models\block\stripped_faevil_wood.json
 ece60c21369cc077e411b316cdae20857d202eda assets\ancientechoesmod\blockstates\adamantium_block.json

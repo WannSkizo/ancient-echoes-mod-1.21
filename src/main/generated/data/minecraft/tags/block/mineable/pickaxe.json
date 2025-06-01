@@ -1,7 +1,10 @@
 {
   "values": [
-    "ancientechoesmod:adamantium_block",
     "ancientechoesmod:deepslate_adamantium_ore",
-    "ancientechoesmod:primordial_steel"
+    "ancientechoesmod:adamantium_block",
+    "ancientechoesmod:primordial_steel",
+    "ancientechoesmod:vibranium_ore",
+    "ancientechoesmod:vibranium_block",
+    "ancientechoesmod:vibra_portal"
   ]
 }

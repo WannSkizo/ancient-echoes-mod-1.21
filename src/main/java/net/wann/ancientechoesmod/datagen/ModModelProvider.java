@@ -17,10 +17,14 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_ADAMANTIUM_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ADAMANTIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VIBRANIUM_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COAL_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.IRON_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.REDSTONE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ADAMANTIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VIBRANIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PRIMORDIAL_STEEL);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VIBRA_PORTAL);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.QUANTUM_FORGE);
 

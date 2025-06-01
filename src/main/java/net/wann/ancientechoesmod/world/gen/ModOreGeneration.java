@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.world.gen.GenerationStep;
 import net.wann.ancientechoesmod.world.ModPlacedFeatures;
+import net.wann.ancientechoesmod.world.biome.ModBiomeSelectors;
 import net.wann.ancientechoesmod.world.biome.ModBiomes;
 
 public class ModOreGeneration {
@@ -23,6 +24,19 @@ public class ModOreGeneration {
                 ModPlacedFeatures.ORE_VIBRANIUM_MEDIUM_PLACED);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.VIBRA_BIOME), GenerationStep.Feature.UNDERGROUND_ORES,
                 ModPlacedFeatures.ORE_VIBRANIUM_LARGE_PLACED);
+
+        BiomeModifications.addFeature(ModBiomeSelectors.foundInVibralune(), GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.ORE_COAL_PLACED);
+        BiomeModifications.addFeature(ModBiomeSelectors.foundInVibralune(), GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.ORE_COAL_BURIED_PLACED);
+
+        BiomeModifications.addFeature(ModBiomeSelectors.foundInVibralune(), GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.ORE_IRON_PLACED);
+        BiomeModifications.addFeature(ModBiomeSelectors.foundInVibralune(), GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.ORE_IRON_SMALL_PLACED);
+
+        BiomeModifications.addFeature(ModBiomeSelectors.foundInVibralune(), GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.ORE_REDSTONE_PLACED);
 
         BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Feature.UNDERGROUND_DECORATION,
                 ModPlacedFeatures.PRIMORDIAL_STEEL_SMALL_PLACED);

@@ -19,6 +19,7 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import net.wann.ancientechoesmod.block.ModBlocks;
+import net.wann.ancientechoesmod.util.ModTags;
 
 import java.util.List;
 
@@ -32,6 +33,14 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> ORE_VIBRANIUM_MEDIUM = registerKey("ore_vibranium_medium");
     public static final RegistryKey<ConfiguredFeature<?, ?>> ORE_VIBRANIUM_LARGE = registerKey("ore_vibranium_large");
     public static final RegistryKey<ConfiguredFeature<?, ?>> ORE_VIBRANIUM_EXTRA_LARGE_BURIED = registerKey("ore_vibranium_extra_large_buried");
+
+    public static final RegistryKey<ConfiguredFeature<?, ?>> ORE_COAL = registerKey("ore_coal");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> ORE_COAL_BURIED = registerKey("ore_coal_buried");
+
+    public static final RegistryKey<ConfiguredFeature<?, ?>> ORE_IRON = registerKey("ore_coal");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> ORE_IRON_SMALL = registerKey("ore_iron_small");
+
+    public static final RegistryKey<ConfiguredFeature<?, ?>> ORE_REDSTONE = registerKey("ore_redstone");
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> PRIMORDIAL_STEEL_SMALL = registerKey("primordial_steel_small");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PRIMORDIAL_STEEL_LARGE = registerKey("primordial_steel_large");
@@ -62,7 +71,8 @@ public class ModConfiguredFeatures {
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest ruleList1 = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
         RuleTest ruleList2 = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
-        RuleTest ruleList3 = new TagMatchRuleTest(BlockTags.BASE_STONE_NETHER);
+        RuleTest ruleList3 = new TagMatchRuleTest(ModTags.Blocks.VIBRA_STONE_ORE_REPLACEABLES);
+        RuleTest ruleList4 = new TagMatchRuleTest(BlockTags.BASE_STONE_NETHER);
 
         List<OreFeatureConfig.Target> list1 =
                 List.of(OreFeatureConfig.createTarget(ruleList1, ModBlocks.DEEPSLATE_ADAMANTIUM_ORE.getDefaultState()));
@@ -71,7 +81,16 @@ public class ModConfiguredFeatures {
                 List.of(OreFeatureConfig.createTarget(ruleList2, ModBlocks.VIBRANIUM_ORE.getDefaultState()));
 
         List<OreFeatureConfig.Target> list3 =
-                List.of(OreFeatureConfig.createTarget(ruleList3, ModBlocks.PRIMORDIAL_STEEL.getDefaultState()));
+                List.of(OreFeatureConfig.createTarget(ruleList3, ModBlocks.COAL_ORE.getDefaultState()));
+
+        List<OreFeatureConfig.Target> list4 =
+                List.of(OreFeatureConfig.createTarget(ruleList3, ModBlocks.IRON_ORE.getDefaultState()));
+
+        List<OreFeatureConfig.Target> list5 =
+                List.of(OreFeatureConfig.createTarget(ruleList3, ModBlocks.REDSTONE_ORE.getDefaultState()));
+
+        List<OreFeatureConfig.Target> list6 =
+                List.of(OreFeatureConfig.createTarget(ruleList4, ModBlocks.PRIMORDIAL_STEEL.getDefaultState()));
 
         register(context, ORE_ADAMANTIUM_SMALL, Feature.ORE, new OreFeatureConfig(list1, 3, 0.5F));
         register(context, ORE_ADAMANTIUM_MEDIUM, Feature.ORE, new OreFeatureConfig(list1, 6, 0.5F));
@@ -83,8 +102,16 @@ public class ModConfiguredFeatures {
         register(context, ORE_VIBRANIUM_LARGE, Feature.ORE, new OreFeatureConfig(list2, 12, 0.5F));
         register(context, ORE_VIBRANIUM_EXTRA_LARGE_BURIED, Feature.ORE, new OreFeatureConfig(list2, 24, 0.97F));
 
-        register(context, PRIMORDIAL_STEEL_SMALL, Feature.SCATTERED_ORE, new OreFeatureConfig(list3, 2, 1.0F));
-        register(context, PRIMORDIAL_STEEL_LARGE, Feature.SCATTERED_ORE, new OreFeatureConfig(list3, 3, 1.0F));
+        register(context, ORE_COAL, Feature.ORE, new OreFeatureConfig(list3, 17));
+        register(context, ORE_COAL_BURIED, Feature.ORE, new OreFeatureConfig(list3, 17, 0.5F));
+
+        register(context, ORE_IRON, Feature.ORE, new OreFeatureConfig(list4, 9));
+        register(context, ORE_IRON_SMALL, Feature.ORE, new OreFeatureConfig(list4, 4));
+
+        register(context, ORE_REDSTONE, Feature.ORE, new OreFeatureConfig(list5, 8));
+
+        register(context, PRIMORDIAL_STEEL_SMALL, Feature.SCATTERED_ORE, new OreFeatureConfig(list6, 2, 1.0F));
+        register(context, PRIMORDIAL_STEEL_LARGE, Feature.SCATTERED_ORE, new OreFeatureConfig(list6, 3, 1.0F));
 
         register(context, FAEVILWOOD, Feature.TREE, faevil().build());
     }

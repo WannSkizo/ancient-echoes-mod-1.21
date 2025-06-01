@@ -3,9 +3,11 @@ package net.wann.ancientechoesmod.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LeafEntry;
@@ -28,9 +30,15 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(ModBlocks.ADAMANTIUM_BLOCK);
         addDrop(ModBlocks.PRIMORDIAL_STEEL);
+        addDrop(ModBlocks.VIBRANIUM_BLOCK);
+        addDrop(ModBlocks.VIBRA_PORTAL);
+        addDrop(ModBlocks.VIBRA_STONE, drops(Blocks.COBBLESTONE));
 
         addDrop(ModBlocks.DEEPSLATE_ADAMANTIUM_ORE, oreDrops(ModBlocks.DEEPSLATE_ADAMANTIUM_ORE, ModItems.RAW_ADAMANTIUM_ORE));
         addDrop(ModBlocks.VIBRANIUM_ORE, oreDrops(ModBlocks.VIBRANIUM_ORE, ModItems.RAW_VIBRANIUM_ORE));
+        addDrop(ModBlocks.COAL_ORE, oreDrops(ModBlocks.COAL_ORE, Items.COAL));
+        addDrop(ModBlocks.IRON_ORE, oreDrops(ModBlocks.IRON_ORE, Items.RAW_IRON));
+        addDrop(ModBlocks.REDSTONE_ORE, multipleOreDrops(ModBlocks.REDSTONE_ORE, Items.REDSTONE,1, 6));
 
         addDrop(ModBlocks.FAEVIL_LOG);
         addDrop(ModBlocks.FAEVIL_WOOD);

@@ -1,6 +1,6 @@
-// 1.21	2025-05-31T17:20:47.4682787	Ancient Echoes Mod/ancientechoesmod_world
-cca7661aec5fa6e2fadb834cceec90c4dadd4d49 data\ancientechoesmod\worldgen\configured_feature\ore_vibranium_large.json
+// 1.21	2025-06-01T23:06:11.1715874	Ancient Echoes Mod/ancientechoesmod_world
 2534140a0c75f9781c619a4c211009ca97e48ae0 data\ancientechoesmod\worldgen\configured_feature\ore_vibranium_small.json
+cca7661aec5fa6e2fadb834cceec90c4dadd4d49 data\ancientechoesmod\worldgen\configured_feature\ore_vibranium_large.json
 ee7a64c2a0eec42bae82edf6174675fcb949e6b2 data\ancientechoesmod\worldgen\placed_feature\primordial_steel_large_placed.json
 ea246503e3f21fe7d56d5c5c9048f8f188d38b4c data\ancientechoesmod\worldgen\placed_feature\ore_vibranium_extra_large_buried_placed.json
 382f2e4ba02fd63e9667425be8929fc4a12695f5 data\ancientechoesmod\worldgen\biome\vibra_biome.json

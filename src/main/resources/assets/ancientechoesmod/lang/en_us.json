@@ -12,10 +12,14 @@
   "item.ancientechoesmod.adamantium_axe": "Adamantium Axe",
 
   "block.ancientechoesmod.deepslate_adamantium_ore": "Deepslate Adamantium Ore",
-  "block.ancientechoesmod.adamantium_block": "Block Of Adamantium",
   "block.ancientechoesmod.vibranium_ore": "Vibranium Ore",
+  "block.ancientechoesmod.coal_ore": "Vibra Coal Ore",
+  "block.ancientechoesmod.iron_ore": "Vibra Iron Ore",
+  "block.ancientechoesmod.redstone_ore": "Vibra Redstone Ore",
+  "block.ancientechoesmod.adamantium_block": "Block Of Adamantium",
   "block.ancientechoesmod.vibranium_block": "Block Of Vibranium",
   "block.ancientechoesmod.primordial_steel": "Primordial Steel",
+  "block.ancientechoesmod.vibra_portal": "Vibra Portal",
 
   "block.ancientechoesmod.quantum_forge": "Quantum Forge",
 

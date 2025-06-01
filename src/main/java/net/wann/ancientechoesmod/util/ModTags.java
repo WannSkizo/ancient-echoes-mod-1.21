@@ -14,6 +14,8 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_ADAMANTIUM_TOOL = createTag("needs_adamantium_tool");
         public static final TagKey<Block> INCORRECT_FOR_ADAMANTIUM_TOOL = createTag("incorrect_for_adamantium_tool");
 
+        public static final TagKey<Block> VIBRA_STONE_ORE_REPLACEABLES = createTag("vibra_stone_ore_replaceables");
+
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(AncientEchoesMod.MOD_ID, name));
         }

@@ -34,9 +34,9 @@ public class AncientEchoesMod implements ModInitializer {
 		ModLootTableModifiers.modifyLootTable();
 
 		CustomPortalBuilder.beginPortal()
-				.frameBlock(ModBlocks.ADAMANTIUM_BLOCK)
+				.frameBlock(ModBlocks.VIBRA_PORTAL)
 				.destDimID(Identifier.of(AncientEchoesMod.MOD_ID, "vibralune"))
-				.tintColor(238, 232, 210)
+				.tintColor(113, 30, 166)
 				.registerPortal();
 
 		StrippableBlockRegistry.register(ModBlocks.FAEVIL_LOG, ModBlocks.STRIPPED_FAEVIL_LOG);

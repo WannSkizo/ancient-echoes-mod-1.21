@@ -11,7 +11,7 @@
           "parameters": {
             "temperature": -0.1,
             "humidity": -0.1,
-            "continentalness": 0.16,
+            "continentalness": 0.1,
             "erosion": 0,
             "weirdness": 0,
             "depth": 0,
@@ -21,9 +21,9 @@
         {
           "biome": "ancientechoesmod:vibra_biome",
           "parameters": {
-            "temperature": 0.1,
+            "temperature": 0.7,
             "humidity": 0,
-            "continentalness": 0,
+            "continentalness": 0.6,
             "erosion": 0,
             "weirdness": 0,
             "depth": 0,

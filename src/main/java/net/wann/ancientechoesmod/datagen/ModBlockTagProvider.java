@@ -2,6 +2,7 @@ package net.wann.ancientechoesmod.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.block.Blocks;
 import net.wann.ancientechoesmod.block.ModBlocks;
 import net.wann.ancientechoesmod.util.ModTags;
 import net.minecraft.registry.RegistryWrapper;
@@ -17,9 +18,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(ModBlocks.ADAMANTIUM_BLOCK)
                 .add(ModBlocks.DEEPSLATE_ADAMANTIUM_ORE)
-                .add(ModBlocks.PRIMORDIAL_STEEL);
+                .add(ModBlocks.ADAMANTIUM_BLOCK)
+                .add(ModBlocks.PRIMORDIAL_STEEL)
+                .add(ModBlocks.VIBRANIUM_ORE)
+                .add(ModBlocks.VIBRANIUM_BLOCK)
+                .add(ModBlocks.VIBRA_PORTAL);
 
         getOrCreateTagBuilder(BlockTags.INCORRECT_FOR_WOODEN_TOOL)
                 .addTag(ModTags.Blocks.NEEDS_NETHERITE_TOOL)
@@ -53,11 +57,18 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
 
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_ADAMANTIUM_TOOL)
+                .add(ModBlocks.VIBRANIUM_ORE)
                 .add(ModBlocks.VIBRANIUM_BLOCK)
-                .add(ModBlocks.VIBRANIUM_ORE);
+                .add(ModBlocks.VIBRA_PORTAL);
 
         getOrCreateTagBuilder(ModTags.Blocks.INCORRECT_FOR_ADAMANTIUM_TOOL)
                 ;
+
+        getOrCreateTagBuilder(ModTags.Blocks.VIBRA_STONE_ORE_REPLACEABLES)
+                .add(ModBlocks.VIBRA_STONE)
+                .add(Blocks.GRANITE)
+                .add(Blocks.DIORITE)
+                .add(Blocks.ANDESITE);
 
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlocks.FAEVIL_LOG)
