@@ -1,0 +1,10 @@
+{
+  "type": "ancientechoesmod:quantum_forge",
+  "ingredient": {
+    "item": "ancientechoesmod:vibranium_block"
+  },
+  "result": {
+    "count": 1,
+    "id": "ancientechoesmod:vibra_portal"
+  }
+}
