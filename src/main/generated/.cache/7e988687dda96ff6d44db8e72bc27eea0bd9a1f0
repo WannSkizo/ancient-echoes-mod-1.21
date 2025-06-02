@@ -1,5 +1,5 @@
-// 1.21	2025-06-01T23:06:11.1905861	Ancient Echoes Mod/Tags for minecraft:block
-20533436a7c851069a61b71405b7cebbfdfabc3b data\minecraft\tags\block\mineable\pickaxe.json
+// 1.21	2025-05-31T17:20:47.4952827	Ancient Echoes Mod/Tags for minecraft:block
+e878bc8fd8b3cac32265164c461f12b524b600bc data\minecraft\tags\block\mineable\pickaxe.json
 acd262d82ba7fc881f4e8f9592480bab47c45ae6 data\minecraft\tags\block\planks.json
 930ec991770e8065211d7691d6f244f386c5d9b5 data\minecraft\tags\block\incorrect_for_wooden_tool.json
 930ec991770e8065211d7691d6f244f386c5d9b5 data\minecraft\tags\block\incorrect_for_gold_tool.json
@@ -8,7 +8,7 @@ ac3701e1181257d407f0a600bc76c8e15cedb4df data\ancientechoesmod\tags\block\needs_
 6ca68f00b90ef279d2f555f513d17f9629dcacda data\minecraft\tags\block\logs_that_burn.json
 930ec991770e8065211d7691d6f244f386c5d9b5 data\minecraft\tags\block\incorrect_for_stone_tool.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\ancientechoesmod\tags\block\incorrect_for_adamantium_tool.json
-cf6beffda6d44ddaaf3b2bc5218e337f6cddbed3 data\ancientechoesmod\tags\block\needs_adamantium_tool.json
+2d079913e6b16c023736424cd458ddc439f69586 data\ancientechoesmod\tags\block\needs_adamantium_tool.json
 930ec991770e8065211d7691d6f244f386c5d9b5 data\minecraft\tags\block\incorrect_for_iron_tool.json
 256e76c9cbf0c18623985bef03147db6d2affaf6 data\minecraft\tags\block\needs_diamond_tool.json
 930ec991770e8065211d7691d6f244f386c5d9b5 data\minecraft\tags\block\incorrect_for_diamond_tool.json
